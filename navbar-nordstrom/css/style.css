@@ -1,0 +1,38 @@
+/* Main styling */
+* {
+  font-size: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p,
+span {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.75rem;
+  list-style: none;
+}
+
+/* banner */
+
+.banner {
+  background-color: #000;
+}
+
+.banner__body {
+  color: #fff;
+  margin: 0;
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+
+.banner__body--bold {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* logo */
+
+/* nav */
