@@ -1,6 +1,9 @@
 /* Main styling */
-* {
+html {
   font-size: 10px;
+}
+
+body {
   margin: 0 auto;
   text-align: center;
 }
@@ -17,7 +20,8 @@ li {
 
 /* layout */
 header {
-  display: flex;
+  margin: 0 auto;
+  width: 85%;
 }
 
 /* banner */
@@ -37,10 +41,15 @@ header {
 .banner__span {
   display: inline-block;
   font-weight: 800;
+  margin-right: 0.5em;
   text-decoration: none;
 }
 
 /* logo */
+.logo {
+  text-align: left;
+}
+
 .logo__text {
   font-family: "Lucida Sans", sans-serif;
   font-size: 2.9rem;
@@ -52,4 +61,27 @@ header {
 /* nav */
 .nav {
   display: flex;
+  justify-content: space-between;
+}
+
+.nav-primary {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-primary__item {
+  padding-right: 1em;
+}
+
+.nav-secondary {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-secondary__item {
+  padding-left: 1em;
 }
