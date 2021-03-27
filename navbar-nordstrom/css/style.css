@@ -21,7 +21,7 @@ li {
 /* layout */
 header {
   margin: 0 auto;
-  width: 85%;
+  width: 95%;
 }
 
 /* banner */
@@ -47,6 +47,7 @@ header {
 
 /* logo */
 .logo {
+  flex: 1;
   text-align: left;
 }
 
@@ -67,21 +68,38 @@ header {
 .nav-primary {
   align-items: center;
   display: flex;
+  flex: 3;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.nav-primary__item {
-  padding-right: 1em;
+.nav-primary__item:hover {
+  text-decoration: underline;
 }
 
 .nav-secondary {
   align-items: center;
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
 
 .nav-secondary__item {
   padding-left: 1em;
+}
+
+.red {
+  color: #d9392e;
+}
+
+@media (max-width: 1275px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  .nav-primary {
+    order: 1;
+  }
 }
