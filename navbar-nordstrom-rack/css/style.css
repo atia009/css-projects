@@ -3,6 +3,112 @@ html {
 }
 
 body {
+  font-size: 1.8rem;
   margin: 0 auto;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* banner */
+
+.banner {
+  background: #003595;
+  color: #ffffff;
+  padding: 23px 0;
+}
+
+.banner__message {
+  font-weight: 700;
+  text-align: left;
+}
+
+.banner__link {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* user nav */
+.user-nav {
+  border-bottom: 2px solid #eeeeee;
+  text-align: right;
+  padding: 17px 0;
+}
+
+.user-nav__link {
+  color: #757575;
+  font-weight: 600;
+}
+
+.user-nav__heartcon {
+  color: #5f5f63;
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0px 40px;
+}
+
+.user-nav__shop {
+  background: #0c97bc;
+  padding: 22.75px 63px 18px 63px;
+}
+
+.user-nav__shopcon {
+  color: #fdfeff;
+  font-size: 2.25rem;
+}
+
+/* search-nav */
+.search-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-nav__logo {
+  flex: 1;
+  text-align: left;
+}
+
+.search-nav__img {
+  width: 150px;
+}
+
+.search-nav__form {
+  flex: 7;
+}
+
+.search-nav__input {
+  position: relative;
+}
+
+.search-nav__field {
+  box-sizing: border-box;
+  padding: 10px 40px;
+  width: 100%;
+}
+
+.search-nav__icon {
+  bottom: 10px;
+  left: 14px;
+  position: absolute;
+}
+
+.search-nav__link {
+  color: #4f97bc;
+  flex: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
