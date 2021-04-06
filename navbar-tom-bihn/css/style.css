@@ -1,0 +1,61 @@
+/* Global styles */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #ffffff;
+  border: 0;
+  padding: 0;
+}
+
+/* layout */
+
+.wrap {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* banner */
+.banner {
+  background-color: #000000;
+}
+
+.banner__message {
+  color: #f6f6f6;
+  font-weight: 600;
+  margin: 0;
+  padding: 7px 0;
+}
+
+.banner__link {
+  color: #f6f6f6;
+  text-decoration: underline;
+}
