@@ -59,3 +59,50 @@ button {
   color: #f6f6f6;
   text-decoration: underline;
 }
+
+/* main-nav */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  order: 3;
+}
+
+.primary-nav {
+  align-items: center;
+  display: flex;
+}
+
+.secondary-nav {
+  align-items: center;
+  display: flex;
+}
+
+.primary-nav__link,
+.primary-nav__btn,
+.secondary-nav__link,
+.secondary-nav__btn {
+  color: #2f292b;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 10px 8px;
+  text-transform: uppercase;
+}
+
+.primary-nav__link:hover,
+.primary-nav__btn:hover,
+.secondary-nav__link:hover,
+.secondary-nav__btn:hover {
+  background-color: #484848;
+  color: #ffffff;
+}
+
+/* user-nav */
+.user-nav {
+  display: flex;
+}
+
+/* search-nav */
+.search-nav {
+  display: flex;
+}
