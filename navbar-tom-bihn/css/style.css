@@ -35,7 +35,7 @@ button {
 
 .wrap {
   margin: 0 auto;
-  width: 60%;
+  width: 55%;
 }
 
 .nav {
@@ -132,11 +132,51 @@ button {
 
 /* search-nav */
 .search-nav {
+  border-bottom: 1px solid #000;
+}
+
+.search-wrap {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .search-nav__logo {
+  margin: 25px 0;
   width: 450px;
+}
+
+.search-bags {
+  text-align: left;
+}
+
+.search-nav__form {
+  position: relative;
+}
+
+.search-nav__field {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 15px;
+  padding: 0 130px 15px 0;
+}
+
+::placeholder {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.search-nav__icon {
+  position: absolute;
+  right: 0px;
+}
+
+.search-nav__btn {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.search-nav__btn:hover {
+  color: #ed1c24;
 }
