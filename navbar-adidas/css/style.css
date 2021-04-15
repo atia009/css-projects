@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* header */
+.header {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+/* banner */
+.banner {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 450px;
+}
+
+.banner__link {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.banner__icon {
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+/* nav */
+.nav {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.nav__logo {
+  width: 75px;
+}
+
+/* primary nav*/
+.primary-nav {
+  display: flex;
+}
+
+.primary-nav__item {
+  margin: 0 15px;
+}
+
+.primary-nav__link {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* secondary nav */
+.secondary-nav {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+/* user nav */
+.user-nav {
+  display: flex;
+}
+
+.user-nav__img {
+  width: 60px;
+}
+
+/* search nav */
+.search-nav {
+  display: flex;
+}
