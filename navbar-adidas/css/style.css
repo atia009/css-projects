@@ -110,6 +110,8 @@ ul {
 
 /* search nav */
 .search-nav {
+  align-self: flex-end;
+  align-items: flex-end;
   display: flex;
   margin: 8px 15px;
 }
@@ -119,5 +121,28 @@ ul {
 }
 
 .search-nav__icon {
+  color: #0d0d0d;
   font-size: 2.1rem;
+}
+
+.search-nav__form {
+  position: relative;
+}
+
+.search-nav__field {
+  background-color: #ebedee;
+  border: 0;
+  padding: 8px 125px 8px 12px;
+}
+
+.search-icon {
+  bottom: 8px;
+  color: #0d0d0d;
+  font-size: 2.1rem;
+  position: absolute;
+  right: 12px;
+}
+
+::placeholder {
+  font-weight: 600;
 }
