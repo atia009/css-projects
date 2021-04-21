@@ -85,6 +85,11 @@ button {
   font-weight: 500;
 }
 
+.secondary-nav__link:hover,
+.secondary-nav__item:nth-of-type(6) > .secondary-nav__btn:hover {
+  text-decoration: underline;
+}
+
 .secondary-nav__icon {
   bottom: 1px;
   font-size: 3rem;
@@ -97,6 +102,7 @@ button {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 15px 0px 5px 0px;
 }
 
 .logo__img {
@@ -137,14 +143,52 @@ button {
   font-size: 2rem;
 }
 
+.user-nav__link:hover {
+  text-decoration: underline;
+}
+
 .user-nav__item {
-  padding: 0 17.5px;
+  padding: 10px 17.5px;
 }
 
 .user-nav__item:not(:last-child) {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .user-nav__logo {
   margin-right: 10px;
+}
+
+/* primary-nav */
+.primary-container {
+  background-color: #0073a6;
+}
+
+.primary-nav {
+  align-items: center;
+  display: flex;
+}
+
+.primary-nav__item {
+  margin: 15px 50px 15px 0px;
+  position: relative;
+}
+
+.primary-nav__item:nth-of-type(1) {
+  padding-left: 30px;
+}
+
+.primary-nav__link,
+.primary-nav__btn {
+  color: #f4f9fb;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 1.95rem;
+}
+
+.primary-nav__icon {
+  font-size: 2.5rem;
+  left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 0px;
 }
