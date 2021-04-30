@@ -55,10 +55,12 @@ ul {
 
 .primary-nav {
   background-color: #232f3e;
+  padding: 5px 15px;
 }
 
 .user-container {
   background-color: #131921;
+  padding: 5px 15px;
 }
 
 /* user-container */
@@ -68,7 +70,7 @@ ul {
 }
 
 .logo {
-  width: 130px;
+  width: 125px;
 }
 
 .user-container__btn {
@@ -79,6 +81,8 @@ ul {
 
 .user-container__btn-icon {
   font-size: 1.75rem;
+  margin-top: 10px;
+  margin-right: 5px;
 }
 
 .user-container__span {
@@ -95,14 +99,15 @@ ul {
 
 .search-form {
   flex-grow: 1;
-  margin: 0 10px;
+  margin: 0 30px;
   position: relative;
 }
 
 .search-form__field {
   border-radius: 5px;
   box-shadow: none;
-  height: 40px;
+  height: 45px;
+  text-indent: 55px;
   width: 100%;
 }
 
@@ -111,7 +116,7 @@ ul {
   border-radius: 5px 0px 0px 5px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: #606060;
-  padding: 12px 10px;
+  padding: 14px 10px;
   position: absolute;
   top: 0px;
 }
@@ -125,7 +130,7 @@ ul {
   border-radius: 0px 5px 5px 0px;
   color: #3b3835;
   font-size: 2.3rem;
-  padding: 8.5px 12.5px;
+  padding: 11px 12.5px;
   position: absolute;
   right: 0px;
 }
@@ -137,9 +142,12 @@ ul {
 
 .user-nav__img {
   width: 25px;
+  margin-right: 5px;
+  margin-top: 15px;
 }
 
 .user-nav__item {
+  padding: 15px 15px;
   text-align: left;
 }
 
@@ -147,6 +155,11 @@ ul {
   color: #fcfcfc;
   font-size: 1.4rem;
   font-weight: 600;
+  position: relative;
+}
+
+.user-nav__icon {
+  color: #94999f;
 }
 
 .user-nav__span {
@@ -154,18 +167,41 @@ ul {
   font-weight: 200;
 }
 
-.user-nav__toggle {
-  display: none;
-}
-
 .user-nav__cart {
   font-size: 3.25rem;
-  position: relative;
 }
 
 .user-nav__counter {
   color: #f08804;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  bottom: 10px;
+  left: 16px;
+}
+
+.user-container__btn:hover,
+.user-nav__item:hover {
+  border: 1px solid #fff;
+}
+
+/* primary-nav */
+.primary-wrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.primary-nav__item:last-of-type {
+  margin-left: auto;
+}
+
+.primary-nav__link,
+.primary-nav__btn {
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.primary-nav__link:hover,
+.primary-nav__btn:hover {
+  border: 1px solid #fff;
 }
