@@ -24,6 +24,12 @@ a {
 button {
   background: none;
   border: none;
+  box-shadow: none;
+}
+
+input {
+  border: none;
+  box-shadow: none;
 }
 
 span {
@@ -33,4 +39,133 @@ span {
 ul {
   padding-left: 0px;
   list-style: none;
+  margin: 0;
+}
+
+/* layout */
+.wrap {
+  min-width: 1000px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.primary-nav {
+  background-color: #232f3e;
+}
+
+.user-container {
+  background-color: #131921;
+}
+
+/* user-container */
+.user-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+}
+
+.user-container__btn {
+  align-items: center;
+  color: #fcfcfc;
+  display: flex;
+}
+
+.user-container__btn-icon {
+  font-size: 1.75rem;
+}
+
+.user-container__span {
+  color: #ccc;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.user-container__text {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.search-form {
+  flex-grow: 1;
+  margin: 0 10px;
+  position: relative;
+}
+
+.search-form__field {
+  border-radius: 5px;
+  box-shadow: none;
+  height: 40px;
+  width: 100%;
+}
+
+.search-form__btn {
+  background-color: #f3f3f3;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  color: #606060;
+  padding: 12px 10px;
+  position: absolute;
+  top: 0px;
+}
+
+.search-form__btn-icon {
+  margin-left: 5px;
+}
+
+.search-form__icon {
+  background-color: #febd69;
+  border-radius: 0px 5px 5px 0px;
+  color: #3b3835;
+  font-size: 2.3rem;
+  padding: 8.5px 12.5px;
+  position: absolute;
+  right: 0px;
+}
+
+.user-nav {
+  align-items: center;
+  display: flex;
+}
+
+.user-nav__img {
+  width: 25px;
+}
+
+.user-nav__item {
+  text-align: left;
+}
+
+.user-nav__link {
+  color: #fcfcfc;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.user-nav__span {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.user-nav__toggle {
+  display: none;
+}
+
+.user-nav__cart {
+  font-size: 3.25rem;
+  position: relative;
+}
+
+.user-nav__counter {
+  color: #f08804;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
