@@ -55,12 +55,12 @@ ul {
 
 .primary-nav {
   background-color: #232f3e;
-  padding: 5px 15px;
+  padding: 6px 15px;
 }
 
 .user-container {
   background-color: #131921;
-  padding: 5px 15px;
+  padding: 2px 15px;
 }
 
 /* user-container */
@@ -192,13 +192,24 @@ ul {
 }
 
 .primary-nav__item:last-of-type {
+  font-weight: 600;
   margin-left: auto;
 }
 
 .primary-nav__link,
 .primary-nav__btn {
   color: #ffffff;
-  padding: 5px 10px;
+  font-size: 1.5rem;
+  padding: 5px 11px;
+}
+
+.primary-nav__btn {
+  font-weight: 600;
+}
+
+.primary-nav__btn-icon {
+  font-size: 1.9rem;
+  margin-right: 5px;
 }
 
 .primary-nav__link:hover,
