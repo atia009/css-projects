@@ -90,6 +90,31 @@ button {
 }
 
 /* primary-area */
+.primary-check {
+  display: none;
+}
+
+.primary-btn {
+  background-color: #0073a6;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+}
+
+.primary-btn__icon {
+  font-size: 2.3rem;
+  left: 10px;
+  position: absolute;
+}
+
+.primary-check:checked ~ .primary-btn ~ .primary-nav {
+  display: flex;
+}
+
+.primary-nav {
+  display: none;
+}
 
 /* secondary-nav */
 .secondary-nav__item {
@@ -97,7 +122,6 @@ button {
 }
 
 .secondary-nav__item:last-of-type {
-  /* margin-right: 20px; */
   position: relative;
 }
 
