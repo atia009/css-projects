@@ -1,0 +1,70 @@
+/* global styles */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: 0px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+img {
+  width: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* layout */
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-nav {
+  display: flex;
+  margin-left: 800px;
+}
+
+.primary-container {
+  display: none;
+}
+
+.secondary-container {
+  background-color: #fafafa;
+  padding: 25px 0px;
+}
+
+.secondary-nav {
+  display: none;
+}
