@@ -24,6 +24,7 @@ a {
 button {
   background: none;
   border: 0px;
+  padding-left: 0px;
 }
 
 input[type="checkbox"] {
@@ -31,7 +32,7 @@ input[type="checkbox"] {
 }
 
 img {
-  width: 30px;
+  width: 27.5px;
 }
 
 ul {
@@ -53,18 +54,115 @@ ul {
 
 .user-nav {
   display: flex;
-  margin-left: 800px;
+  margin-left: 700px;
 }
 
 .primary-container {
+  background-color: #ffffff;
   display: none;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: 2;
 }
 
 .secondary-container {
   background-color: #fafafa;
-  padding: 25px 0px;
+  padding: 30px 0px;
 }
 
 .secondary-nav {
   display: none;
+}
+
+/* .user-container */
+.logo {
+  margin-left: 15px;
+}
+
+.user-nav__item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.user-nav__link {
+  color: #1f1f1f;
+  font-size: 2.3rem;
+}
+
+.user-nav__span {
+  bottom: 1px;
+  color: #df546c;
+  font-size: 1.25rem;
+  left: 6px;
+  position: absolute;
+}
+
+/* .primary-container */
+.primary-label {
+  font-size: 2.3rem;
+}
+
+.primary-label__icon {
+  margin-right: 15px;
+}
+
+.primary-check:checked ~ .primary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-nav-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.primary-nav {
+  margin: 0;
+}
+
+.primary-nav__item {
+  padding: 17.5px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.primary-nav__item:nth-of-type(1) {
+  padding: 12.5px 15px;
+}
+
+.primary-nav__item:nth-of-type(7) > .primary-nav__btn {
+  color: #df546c;
+}
+
+.primary-nav__btn {
+  display: flex;
+  font-size: 1.95rem;
+  letter-spacing: 1px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.primary-nav__icon {
+  font-size: 2.6rem;
+}
+
+.primary__link {
+  color: #000;
+  margin: 30px 15px 0px 15px;
+}
+
+.primary__btn {
+  align-self: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 1.7rem;
+  padding: 12.5px 20px;
+  margin: 50px 0px 0px 10px;
+}
+
+.primary__icon {
+  font-size: 1.55rem;
+  margin-right: 10px;
 }
