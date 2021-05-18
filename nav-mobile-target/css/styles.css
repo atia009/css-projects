@@ -99,6 +99,7 @@ img {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
+  margin: 0px 10px;
   position: relative;
 }
 
@@ -169,6 +170,7 @@ img {
   color: #fff;
   font-size: 2.5rem;
   position: relative;
+  margin: 0px 25px;
 }
 
 .shop__icon {
@@ -200,4 +202,35 @@ img {
 .shop-nav__link:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
+}
+
+/* search */
+.search {
+  margin: 0px 10px;
+  position: relative;
+  flex: 1;
+}
+
+.search__field {
+  border: 0px;
+  border-radius: 20px;
+  height: 37.5px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.search__icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+::placeholder {
+  color: #b4b4b4;
+  font-size: 1.75rem;
+}
+
+.cart__icon {
+  color: #fff;
+  font-size: 2rem;
 }
