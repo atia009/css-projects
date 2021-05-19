@@ -42,16 +42,20 @@ img {
   width: 35px;
 }
 
+.hover:hover {
+  cursor: pointer;
+}
+
 /* layout */
 .wrap {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
 }
 
 .primary-container {
   background-color: #cc0000;
+  padding: 15px;
   position: relative;
 }
 
@@ -73,14 +77,17 @@ img {
 
 .secondary-container {
   background-color: #fff;
+  padding: 7px 15px;
   position: relative;
 }
 
 .location-container {
+  border-top: 1px solid #efefef;
   display: none;
   left: 0px;
+  padding: 0px 10px;
   position: absolute;
-  top: 30px;
+  top: 53px;
   z-index: 2;
 }
 
@@ -220,9 +227,13 @@ img {
 }
 
 .search__icon {
+  background-color: #f7f7f7;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 1.5rem;
+  padding: 10px 14px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
 }
 
 ::placeholder {
@@ -233,4 +244,81 @@ img {
 .cart__icon {
   color: #fff;
   font-size: 2rem;
+}
+
+/* secondary-container */
+.location__label {
+  font-size: 1.3rem;
+  padding: 3px;
+  position: relative;
+  text-align: left;
+}
+
+.location__label:active {
+  border: 1px dotted black;
+  border-radius: 5px;
+}
+
+.location--green {
+  color: #006601;
+}
+
+.location--bold {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.location__icon {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+.location__toggle:checked ~ .location-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-tab {
+  margin: 30px 10px;
+}
+
+.location-tab__link {
+  color: #000;
+  text-decoration: underline;
+}
+
+.location-tab__icon {
+  margin: 20px 20px 25px 0px;
+}
+
+.location-tab__form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.location-tab__field {
+  padding: 15px;
+  width: 70%;
+}
+
+.location-tab__header,
+.location-item__header {
+  font-size: 2.6rem;
+  margin: 0px;
+}
+
+.location-tab__btn,
+.store__set {
+  background-color: #cc0000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 16.5px 25px;
+}
+
+.location-item {
+  border-top: 1px solid #efefef;
+  padding: 10px 0px;
 }
