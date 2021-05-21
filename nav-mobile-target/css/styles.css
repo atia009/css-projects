@@ -94,8 +94,9 @@ img {
 .user-nav {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 53px;
   right: 0px;
+  width: 65%;
   z-index: 2;
 }
 
@@ -359,4 +360,72 @@ img {
   bottom: 13.5px;
   margin-left: 10px;
   position: absolute;
+}
+
+.secondary__link {
+  border-right: 1px solid #000;
+  color: #666666;
+  flex: 1;
+  padding: 10px 4px 10px 0px;
+  text-align: right;
+}
+
+.secondary__link:hover {
+  text-decoration: underline;
+}
+
+/* user-nav */
+.user__label {
+  color: #666666;
+  font-size: 2.7rem;
+  margin-left: 4px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.user__icon {
+  font-size: 1.5rem;
+  left: 2px;
+  position: absolute;
+  top: 10px;
+}
+
+.user__toggle:checked ~ .user-nav {
+  background: #fff;
+  border-top: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: left;
+}
+
+.user-nav__item {
+  border-bottom: 1px solid #efefef;
+  margin: 0px 20px;
+  padding: 15px 0px 15px 0px;
+}
+
+.user-nav__item:nth-of-type(8) {
+  border-bottom: 0px;
+}
+
+.user-nav__link {
+  color: #000;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+
+.user-nav__span {
+  color: #666;
+  font-size: 1.7rem;
+}
+
+.user-nav__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+.user-nav__logo {
+  width: 110px;
 }
