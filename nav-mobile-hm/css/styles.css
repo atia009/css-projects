@@ -73,8 +73,7 @@ ul {
   display: none;
   background-color: #fff;
   position: absolute;
-  left: 50%;
-  margin-left: -50%;
+  left: 7.5%;
 }
 
 .search-nav {
@@ -163,4 +162,26 @@ ul {
 .primary-nav__btn:hover,
 .secondary-nav__item:hover {
   cursor: pointer;
+}
+
+/* user */
+.user__toggle:checked ~ .user-container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form__field {
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+}
+
+::placeholder {
+  text-align: right;
 }
