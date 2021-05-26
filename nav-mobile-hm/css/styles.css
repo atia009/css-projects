@@ -172,9 +172,27 @@ ul {
   padding: 25px;
 }
 
+.user-container__label {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.user-container__icon {
+  font-size: 3rem;
+}
+
+.user-container__header {
+  margin: 0;
+}
+
+.user-container__desc {
+  margin-bottom: 40px;
+}
+
 .user-form {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .user-form__field {
@@ -183,5 +201,20 @@ ul {
 }
 
 ::placeholder {
+  font-weight: 600;
   text-align: right;
+  text-transform: uppercase;
+}
+
+.user-form__label {
+  font-size: 1.4rem;
+  margin: 12.5px 0px;
+}
+
+.user-form__span {
+  color: #d60420;
+}
+
+.user-form__checkbox {
+  display: block !important;
 }
