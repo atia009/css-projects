@@ -166,7 +166,7 @@ ul {
 
 /* user */
 .user__toggle:checked ~ .user-container {
-  background-color: lightgray;
+  background-color: #faf9f8;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -215,6 +215,41 @@ ul {
   color: #d60420;
 }
 
-.user-form__checkbox {
+.user-pass {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+
+.user-pass__checkbox {
   display: block !important;
+  margin: 0px 10px 0px 0px;
+}
+
+.user-pass__label {
+  margin-right: auto;
+}
+
+.user-container__btn {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin: 10px 0px;
+  padding: 17.5px 0px;
+  text-transform: uppercase;
+}
+
+.user-container__btn--invert {
+  background-color: #faf9f8;
+  color: #000;
+}
+
+.user-container__link {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-top: 7.5px;
 }
