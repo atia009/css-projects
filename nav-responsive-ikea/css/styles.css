@@ -41,9 +41,14 @@ ul {
 }
 
 /* layout */
+.header {
+  position: relative;
+}
+
 .message {
   background-color: #000;
   padding: 20px 0px;
+  text-align: left;
 }
 
 .nav {
@@ -59,10 +64,21 @@ ul {
 
 .primary__label {
   order: 1;
+  margin-left: 25px;
 }
 
 .primary-container {
+  background-color: #fff;
   display: none;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  width: 100vw;
+  text-align: left;
+  top: 0px;
+  z-index: 2;
 }
 
 .location-container {
@@ -77,4 +93,58 @@ ul {
   flex: 1;
   order: 2;
   position: relative;
+}
+
+/* message */
+.message__click {
+  color: #fff;
+  margin: 0px 10px 0px 20px;
+}
+
+.message__link {
+  color: #fff;
+  font-size: 1.35rem;
+}
+
+.message__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+/* primary-container */
+.primary__toggle:checked ~ .primary-container {
+  animation-duration: 0.5s;
+  animation-name: easeleft;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-container__banner {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.primary-container__icon {
+  font-size: 2rem;
+}
+
+.primary-nav__link {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* animation */
+/* need js to ease right after reclicking */
+@keyframes easeleft {
+  0% {
+    margin-right: 400px;
+  }
+
+  100% {
+    margin-right: 0px;
+  }
 }
