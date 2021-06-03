@@ -125,16 +125,40 @@ ul {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .primary-container__icon {
   font-size: 2rem;
 }
 
+.primary-nav__item {
+  margin: 25px 0px;
+}
+
+.primary-nav__item:nth-of-type(7) {
+  margin-top: 60px;
+}
+
 .primary-nav__link {
-  font-size: 2.5rem;
+  font-size: 2.65rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.primary-nav--shrink {
+  font-size: 1.6rem;
+}
+
+.primary-nav--roman {
+  font-weight: 200;
+}
+
+.primary-container__btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 65px 0px 20px 0px;
+  padding: 10px;
 }
 
 /* animation */
