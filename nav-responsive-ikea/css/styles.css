@@ -75,14 +75,21 @@ ul {
   padding: 20px;
   position: absolute;
   right: 0px;
-  width: 100vw;
   text-align: left;
   top: 0px;
+  width: 100vw;
   z-index: 2;
 }
 
 .location-container {
+  background-color: #fff;
   display: none;
+  left: 0px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: 2;
 }
 
 .tabs {
@@ -146,6 +153,10 @@ ul {
   letter-spacing: 1px;
 }
 
+.primary-nav__link:hover {
+  text-decoration: underline;
+}
+
 .primary-nav--shrink {
   font-size: 1.6rem;
 }
@@ -155,10 +166,63 @@ ul {
 }
 
 .primary-container__btn {
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
   margin: 65px 0px 20px 0px;
-  padding: 10px;
+  padding: 10px 15px;
+}
+
+.primary-container__globe {
+  font-size: 2.1rem;
+  margin-right: 5px;
+}
+
+.primary-container__btn:hover {
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* location-container */
+.location__toggle:checked ~ .location-container {
+  animation-duration: 0.4s;
+  animation-name: easetop;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-banner {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-banner__label {
+  align-self: flex-end;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 12.5px 12.5px 0px 0px;
+  padding: 10px 14px;
+}
+
+.location-banner__icon {
+  font-size: 2rem;
+}
+
+.location-banner__form {
+  position: relative;
+}
+
+.location-banner__field {
+  width: 100%;
+}
+
+.location-banner__search {
+  position: absolute;
 }
 
 /* animation */
@@ -170,5 +234,15 @@ ul {
 
   100% {
     margin-right: 0px;
+  }
+}
+
+@keyframes easetop {
+  0% {
+    margin-top: 400px;
+  }
+
+  100% {
+    margin-top: 0px;
   }
 }
