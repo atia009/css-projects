@@ -337,7 +337,7 @@ ul {
   width: 50%;
 }
 
-.location-nav__btn {
+.location-nav__label {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 40px;
@@ -348,7 +348,7 @@ ul {
   padding: 7.5px 5px;
 }
 
-.location-nav__btn:hover {
+.location-nav__label:hover {
   background-color: #f5f5f5;
 }
 

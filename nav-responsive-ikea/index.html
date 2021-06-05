@@ -55,96 +55,270 @@
       </section>
       <ul class="location-nav">
         <li class="location-nav__item">
-        <h3 class="location-nav__title">My IKEA</h3>
-        <div class="location-nav__body">
-          <p class="location-nav__place">Carson</p>
-          <p class="location-nav__miles">24.5 mi</p>
-          <p class="location-nav__address">20700 S Avalon Blvd <br> Carson, CA 90746</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <h3 class="location-nav__title">My IKEA</h3>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Carson</p>
+            <p class="location-nav__miles">24.5 mi</p>
+            <p class="location-nav__address">20700 S Avalon Blvd <br> Carson, CA 90746</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+              <li class="store-list__item">
+                <p class="store-list__key">Sunday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Monday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Tuesday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Wednesday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Thursday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Friday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <p class="store-list__key">Saturday</p>
+                <p class="store-list__value">10:00 am - 09:00 pm</p>
+              </li>
+              <li class="store-list__item">
+                <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+              </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
         <li class="location-nav__item">
-        <h3 class="location-nav__title">Other Stores</h3>
-        <div class="location-nav__body">
-          <p class="location-nav__place">Burbank</p>
-          <p class="location-nav__miles">7.5 mi</p>
-          <p class="location-nav__address">600 Ikea Way <br> Burbank, CA 91502</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <h3 class="location-nav__title">Other Stores</h3>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Burbank</p>
+            <p class="location-nav__miles">7.5 mi</p>
+            <p class="location-nav__address">600 Ikea Way <br> Burbank, CA 91502</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+            <li class="store-list__item">
+              <p class="store-list__key">Sunday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Monday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Tuesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Wednesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Thursday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Friday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Saturday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+            </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
         <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Covina</p>
+            <p class="location-nav__miles">29.6 mi</p>
+            <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+            <li class="store-list__item">
+              <p class="store-list__key">Sunday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Monday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Tuesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Wednesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Thursday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Friday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Saturday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+            </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
         <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Covina</p>
+            <p class="location-nav__miles">29.6 mi</p>
+            <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+            <li class="store-list__item">
+              <p class="store-list__key">Sunday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Monday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Tuesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Wednesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Thursday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Friday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Saturday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+            </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
         <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Covina</p>
+            <p class="location-nav__miles">29.6 mi</p>
+            <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+            <li class="store-list__item">
+              <p class="store-list__key">Sunday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Monday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Tuesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Wednesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Thursday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Friday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Saturday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+            </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
         <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
-        </li>
-        <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
-        </li>
-        <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
-        </li>
-        <li class="location-nav__item">
-        <div class="location-nav__body">
-          <p class="location-nav__place">Covina</p>
-          <p class="location-nav__miles">29.6 mi</p>
-          <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
-          <a href="#" class="location-nav__link">Directions</a>
-        </div>
-        <button class="location-nav__btn">Store Details<i class="fas fa-angle-down location-nav__angle"></i></button>
-        <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
+          <div class="location-nav__body">
+            <p class="location-nav__place">Covina</p>
+            <p class="location-nav__miles">29.6 mi</p>
+            <p class="location-nav__address">848 South Barranca Avenue <br> Covina, CA 91723</p>
+            <a href="#" class="location-nav__link">Directions</a>
+          </div>
+          <input type="checkbox" id="stores" class="store__toggle">
+          <label for="stores" class="location-nav__label">Store Details<i class="fas fa-angle-down location-nav__angle"></i></label>
+          <ul class="store-list">
+            <li class="store-list__item">
+              <p class="store-list__key">Sunday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Monday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Tuesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Wednesday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Thursday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Friday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <p class="store-list__key">Saturday</p>
+              <p class="store-list__value">10:00 am - 09:00 pm</p>
+            </li>
+            <li class="store-list__item">
+              <a href="#" class="store-list__link">Visit store page <i class="fas fa-angle-right store-list__icon"></i></a>
+            </li>
+          </ul>
+          <button class="location-nav__fav"><i class="far fa-star location-nav__star"></i></button>
         </li>
       </ul>
       </div>
