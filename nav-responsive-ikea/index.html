@@ -15,13 +15,18 @@
    <a href="#" class="message__link">Updates on safe shopping in our stores</a>
   </section>
   <nav class="nav">
-    <a href="#" class="logo"><img src="images/logo.png" alt="Ikea logo"></a>
+    <a href="#" class="logo"><img src="images/logo.png" alt="Ikea logo" class="logo__img"></a>
+    <ul class="category-nav">
+      <li class="category-nav__item"><a href="#" class="category-nav__link">Products</a></li>
+      <li class="category-nav__item"><a href="#" class="category-nav__link">Rooms</a></li>
+      <li class="category-nav__item"><a href="#" class="category-nav__link">Deals</a></li>
+    </ul>
     <input type="checkbox" id="primary" class="primary__toggle">
     <label for="primary" class="primary__label"><i class="fas fa-bars primary__icon"></i></label>
     <div class="primary-container">
       <div class="primary-container__banner">
         <label for="primary" class="primary-container__label"><i class="fas fa-times primary-container__icon"></i></label>
-        <a href="#" class="primary-container__logo"><img src="images/logo.png" alt="Ikea logo"></a>
+        <a href="#" class="primary-container__logo"><img src="images/logo.png" class="logo__img" alt="Ikea logo"></a>
       </div>
       <ul class="primary-nav">
       <li class="primary-nav__item"><a href="#" class="primary-nav__link">Products</a></li>
@@ -42,7 +47,7 @@
     </div>
     <ul class="tabs">
       <input type="checkbox" id="locations" class="location__toggle">
-      <label for="locations" class="location__label"><i class="fas fa-map-marker-alt tabs__icon"></i></label>
+      <label for="locations" class="location__label"><i class="fas fa-map-marker-alt tabs__icon"></i><span class="location__span">Carson</span></label>
       <div class="location-container">
       <section class="location-banner">
         <label for="locations" class="location-banner__label"><i class="fas fa-times location-banner__icon"></i></label>
@@ -345,6 +350,7 @@
         </li>
       </ul>
       </div>
+      <a href="#" class="tabs__link"><i class="fas fa-truck tabs__icon tabs__icon--hidden"></i></a>
       <input type="checkbox" id="users" class="user__toggle">
       <label for="users" class="user__label"><i class="far fa-user user__icon"></i></label>
       <div class="user-container">
@@ -373,7 +379,6 @@
       <input type="text" class="search__field" placeholder="What are you looking for?">
       <i class="fas fa-camera search__camera"></i>
     </form>
-    <a href="#" class="service">Customer Service</a>
   </nav>
  </header>
 </body>
