@@ -99,6 +99,16 @@ ul {
   display: none;
 }
 
+.user-container {
+  display: none;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: -70px;
+  width: 100vw;
+  z-index: 2;
+}
+
 .tabs {
   margin-left: auto;
   margin-right: 32.5px;
@@ -429,6 +439,98 @@ ul {
 .store-list__icon {
   font-size: 2rem;
   text-decoration: none;
+}
+
+/* user-container */
+.user__toggle:checked ~ .user-container {
+  animation-duration: 0.4s;
+  animation-name: easetop;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-banner {
+  background-color: #0058a3;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.user-banner__label {
+  flex-basis: 100%;
+  font-size: 2rem;
+  margin: 20px 25px 10px 25px;
+  text-align: right;
+}
+
+.user-banner__icon {
+  border-radius: 50%;
+  padding: 12.5px 15px;
+}
+
+.user-banner__icon:hover {
+  color: #000;
+  background-color: #dfdfdf;
+}
+
+.user-banner__title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  flex-basis: 100%;
+  font-size: 2.65rem;
+  margin: 0px;
+  padding: 35px 25px;
+  text-align: left;
+}
+
+.user-banner__body {
+  align-items: center;
+  display: flex;
+  font-size: 1.3rem;
+  line-height: 25px;
+  margin: 15px 0px 10px 25px;
+}
+
+.user-banner__body:hover {
+  text-decoration: underline;
+}
+
+.user-banner__text {
+  flex: 3;
+  text-align: left;
+}
+
+.user-banner__span {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+.user-banner__link {
+  flex: 1;
+}
+
+.user-banner__angle {
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+}
+
+.user-nav {
+  margin: 35px 0px 0px 25px;
+  text-align: left;
+}
+
+.user-nav__item {
+  font-size: 1.6rem;
+  padding-bottom: 35px;
+}
+
+.user-nav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
 }
 
 /* tabs */
