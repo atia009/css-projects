@@ -1,0 +1,28 @@
+/* variables */
+:root {
+  --ban-color: #901816;
+  --ban-icon-color: #7a1413;
+  --bg-color: #f7f1e3;
+  --btn-color: #ff6c45;
+  --footer-color: #262626;
+  --nav-color: #434242;
+  --res-color: #e9e4d8;
+  --sec-color: #575757;
+}
+
+/* global styles */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  text-align: left;
+}
