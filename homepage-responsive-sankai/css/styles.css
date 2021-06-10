@@ -53,6 +53,13 @@ ul {
   padding-left: 0em;
 }
 
+/* fonts  */
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+  font-weight: 400;
+}
+
 /* layout */
 .wrap {
   padding: 0em 1em;
@@ -66,10 +73,12 @@ ul {
 
 .nav {
   background-color: var(--nav-color);
+  position: relative;
   width: 100%;
 }
 
 .wrap--nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 1em;
@@ -78,10 +87,74 @@ ul {
 
 .primary-container {
   display: none;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100vw;
 }
 
 .banner {
   background-color: var(--ban-color);
-  width: 100%;
+  padding: 1em 0em;
+  position: relative;
   text-align: center;
+  width: 100%;
+}
+
+/* banner */
+.banner__link {
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.banner__label {
+  background-color: var(--ban-icon-color);
+  display: grid;
+  height: 100%;
+  place-items: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 45px;
+}
+
+.banner__icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.banner__toggle:checked ~ .banner {
+  display: none;
+}
+
+/* nav */
+.nav__logo {
+  color: #fff;
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 2rem;
+}
+
+.nav__icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.65rem;
+}
+
+.nav__toggle:checked ~ .primary-container {
+  background-color: var(--footer-color);
+  display: flex;
+}
+
+/* animation */
+@keyframes easeleft {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0px;
+  }
 }
