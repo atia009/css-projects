@@ -23,6 +23,65 @@ html {
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
   margin: 0 auto;
   text-align: left;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--btn-color);
+  padding: 0.5em 1em;
+}
+
+img {
+  width: 100px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0em;
+}
+
+/* layout */
+.wrap {
+  padding: 0em 1em;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.nav {
+  background-color: var(--nav-color);
+  width: 100%;
+}
+
+.wrap--nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+}
+
+.primary-container {
+  display: none;
+}
+
+.banner {
+  background-color: var(--ban-color);
+  width: 100%;
+  text-align: center;
 }
