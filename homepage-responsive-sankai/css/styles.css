@@ -3,7 +3,8 @@
   --ban-color: #901816;
   --ban-icon-color: #7a1413;
   --bg-color: #f7f1e3;
-  --btn-color: #ff6c45;
+  --btn-color: #da3743;
+  --btn-hov-color: #b8222d;
   --footer-color: #262626;
   --nav-color: #434242;
   --res-color: #e9e4d8;
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin: 0 auto;
@@ -71,6 +72,7 @@ ul {
   align-items: center;
   display: flex;
   flex-direction: column-reverse;
+  padding-bottom: 24.2em;
 }
 
 .nav {
@@ -85,7 +87,7 @@ ul {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1700px;
-  padding: 1em;
+  padding: 0.5em 1em;
   width: 100%;
 }
 
@@ -107,6 +109,27 @@ ul {
   position: relative;
   text-align: center;
   width: 100%;
+}
+
+.showcase {
+  background: url("../images/banner2.jpg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 465px;
+  top: 132px;
+  width: 100%;
+  z-index: -1;
+}
+
+.showcase::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* banner */
@@ -178,9 +201,18 @@ ul {
 }
 
 /* responsive */
-@media (min-width: 640px) {
+@media (min-width: 640.5px) {
   .banner {
     order: 1;
+  }
+
+  .header {
+    padding-bottom: 20.25em;
+  }
+
+  .showcase {
+    height: 520px;
+    top: 0px;
   }
 
   .nav {
@@ -190,11 +222,11 @@ ul {
   .wrap--nav {
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 2.5em 1em 0em 1em;
+    padding: 2.5em 2em 0em 2em;
   }
 
   .nav__logo {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .nav__label,
@@ -238,25 +270,46 @@ ul {
   }
 }
 
-@media (min-width: 754px) {
+@media (min-width: 794px) {
+  .wrap--nav {
+    padding: 2.5em 2.5em 0em 2.5em;
+  }
+}
+
+@media (min-width: 811px) {
   .primary-nav__item:nth-of-type(5) {
     margin-top: 0em;
   }
 }
 
-@media (min-width: 836px) {
+@media (min-width: 894px) {
   .primary-nav__item:nth-of-type(6) {
     margin-top: 0em;
   }
 }
 
+@media (min-width: 961px) {
+  .wrap--nav {
+    padding: 2.5em 3.5em 0em 3.5em;
+  }
+}
+
 @media (min-width: 1182px) {
   .nav__logo {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
 
   .wrap--nav {
     padding: 2.5em 10em 0em 10em;
+  }
+}
+
+@media (min-width: 1280.5px) {
+  .header {
+    padding-bottom: 25em;
+  }
+  .showcase {
+    height: 639px;
   }
 }
 

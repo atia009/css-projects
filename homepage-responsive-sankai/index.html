@@ -6,6 +6,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="../font-awesome/css/all.min.css">
  <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/index.css">
  <title>SanKai</title>
 </head>
 <body>
@@ -19,25 +20,26 @@
   </section>
   <!-- nav -->
   <nav class="nav">
-   <div class="wrap wrap--nav">
-    <a href="#" class="nav__logo">Sankai</a>
-    <input type="checkbox" id="primary" class="nav__toggle">
-    <label for="primary" class="nav__label"><i class="fas fa-bars nav__icon"></i></label>
-    <div class="primary-container">
-     <label for="primary" class="primary-container__label"><i class="fas fa-times primary-container__icon"></i></label>
-     <ul class="primary-nav">
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Nakano-San</a></li>
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Menu</a></li>
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Cuisine</a></li>
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Reservations</a></li>
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Online Ordering</a></li>
-      <li class="primary-nav__item"><a href="#" class="primary-nav__link">Gifts</a></li>
-     </ul>
-   </div>
-   </div>
-  </nav>
+    <div class="wrap wrap--nav">
+      <a href="#" class="nav__logo">Sankai</a>
+      <input type="checkbox" id="primary" class="nav__toggle">
+      <label for="primary" class="nav__label"><i class="fas fa-bars nav__icon"></i></label>
+      <div class="primary-container">
+        <label for="primary" class="primary-container__label"><i class="fas fa-times primary-container__icon"></i></label>
+        <ul class="primary-nav">
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Nakano-San</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Menu</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Cuisine</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Reservations</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Online Ordering</a></li>
+          <li class="primary-nav__item"><a href="#" class="primary-nav__link">Gifts</a></li>
+        </ul>
+      </div>
+    </div>
   <div class="showcase"></div>
- </header>
+  </nav>
+</header>
+
 
  <!-- main -->
  <main class="main">
@@ -48,23 +50,21 @@
     <h1 class="main-content__title">Generations of Sushi Culture</h1>
     <h4 class="main-content__subtitle">Nakano-San</h4>
     <p class="main-content__intro">Sushi master Ryuichi Nakano casts a wide net at SanKai, drawing longtime fans and welcoming newcomers to his intimate new sushi restaurant in the heart of downtown Edmonds.</p>
-    <p class="main-content__body">A coveted seat at Nakano’s sushi bar has been a home-away-from home for Seattle sushi lovers for more than a quarter century. First, at I Love Sushi on South Lake Union — where Nakano-san honed his craft for a decade — and later at Kisaku, his own critically acclaimed Green Lake neighborhood restaurant, sold in 2018.</p> 
+    <p class="main-content__body1">A coveted seat at Nakano’s sushi bar has been a home-away-from home for Seattle sushi lovers for more than a quarter century. First, at I Love Sushi on South Lake Union — where Nakano-san honed his craft for a decade — and later at Kisaku, his own critically acclaimed Green Lake neighborhood restaurant, sold in 2018.</p> 
     <img src="images/figure-01.jpg" alt="profile of Nakano-San" class="main-content__img">
-   </article>
-
-   <!-- sub-content -->
-   <article class="sub-content">
-    <p class="sub-content__intro">SanKai (translation: mountain/sea) provides a fresh vision for Nakano. He continues to celebrate the Japanese culinary art the Pacific Northwest has long embraced, right here where the Olympic Mountains stand as backdrop to the Salish Sea.</p>
-    <p class="sub-content__body">A native of Takayama in the Japan Alps and a longstanding Shoreline, WA resident, Nakano works with his wife Yuka and their son, Toru. Together, they create a warm inviting dining experience, perfect for a family meal or a date-night
-    dinner.</p>
-    <img src="images/figure-02.png" alt="katakana" class="sub-content__img">
+    <p class="main-content__body2">SanKai (translation: mountain/sea) provides a fresh vision for Nakano. He continues to celebrate the Japanese culinary art the Pacific Northwest has long embraced, right here where the Olympic Mountains stand as backdrop to the Salish Sea.</p>
+    <section class="sub-content">
+      <img src="images/figure-02.png" alt="katakana" class="sub-content__img">
+      <p class="sub-content__body">A native of Takayama in the Japan Alps and a longstanding Shoreline, WA resident, Nakano works with his wife Yuka and their son, Toru. Together, they create a warm inviting dining experience, perfect for a family meal or a date-night
+      dinner.</p>
+    </section>
    </article>
    
    <!-- info -->
    <aside class="info">
     <h3 class="info__title">Dine-In & Takeout</h3>
     <ul class="info-list">
-     <li class="info-list__item">111 4th Avenue North Downtown Edmonds, WA 98020</li>
+     <li class="info-list__item">111 4th Avenue North <br> Downtown Edmonds, WA 98020</li>
      <li class="info-list__item info-list__item--bold">Lunch</li>
      <li class="info-list__item">Fri-Sat 11:30am-2pm</li>
      <li class="info-list__item info-list__item--bold">Dinner</li>
@@ -76,32 +76,38 @@
 
    <!-- reserve -->
    <aside class="reserve">
-    <h3 class="reserve__title">Make a Reservation</h3>
-    <form class="reserve-form">
-     <label for="people" class="reserve-form__label"><i class="far fa-user reserve-form__icon"></i></label>
-     <select id="people" class="reserve-form__select">
-      <option value="2 people">2 people</option>
-      <option value="3 people">3 people</option>
-      <option value="4 people">4 people</option>
-      <option value="5 people">5 people</option>
-     </select>
-     <label for="date" class="reserve-form__label"><i class="far fa-calendar reserve-form__icon"></i></label>
-     <select id="date" class="reserve-form__select">
-      <option value="June 6, 2021">June 6, 2021</option>
-      <option value="June 7, 2021">June 7, 2021</option>
-      <option value="June 8, 2021">June 8, 2021</option>
-      <option value="June 9, 2021">June 9, 2021</option>
-     </select>
-     <label for="time" class="reserve-form__label"><i class="far fa-clock reserve-form__icon"></i></label>
-     <select id="time" class="reserve-form__select">
-      <option value="7:00pm">7:00pm</option>
-      <option value="7:30pm">7:30pm</option>
-      <option value="8:00pm">8:00pm</option>
-      <option value="8:30pm">8:30pm</option>
-     </select>
-     <input type="button" value="Find a Table">
-    </form>
-    <img src="images/logo.png" alt="open table logo" class="reserve__logo">
+     <div class="reserve-table">
+      <h3 class="reserve-table__title">Make a Reservation</h3>
+      <form class="reserve-form">
+        <label for="people" class="reserve-form__label"><i class="far fa-user reserve-form__icon"></i></label>
+        <select id="people" class="reserve-form__select">
+          <option value="2 people">2 people</option>
+          <option value="3 people">3 people</option>
+          <option value="4 people">4 people</option>
+          <option value="5 people">5 people</option>
+        </select>
+      </form>
+      <form class="reserve-form">      
+        <label for="date" class="reserve-form__label"><i class="far fa-calendar reserve-form__icon"></i></label>
+        <select id="date" class="reserve-form__select">
+          <option value="June 6, 2021">June 6, 2021</option>
+          <option value="June 7, 2021">June 7, 2021</option>
+          <option value="June 8, 2021">June 8, 2021</option>
+          <option value="June 9, 2021">June 9, 2021</option>
+        </select>
+      </form>
+      <form class="reserve-form">
+        <label for="time" class="reserve-form__label"><i class="far fa-clock reserve-form__icon"></i></label>
+        <select id="time" class="reserve-form__select">
+          <option value="7:00pm">7:00pm</option>
+          <option value="7:30pm">7:30pm</option>
+          <option value="8:00pm">8:00pm</option>
+          <option value="8:30pm">8:30pm</option>
+        </select>
+      </form>
+      <input type="button" value="Find a Table" class="reserve-table__btn">
+      <img src="images/logo.png" alt="open table logo" class="reserve-table__logo">
+    </div>
    </aside>
 
   </div>
