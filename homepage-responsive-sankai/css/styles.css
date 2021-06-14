@@ -289,8 +289,16 @@ ul {
 }
 
 @media (min-width: 961px) {
+  .header {
+    padding-bottom: 23.5em;
+  }
+
   .wrap--nav {
     padding: 2.5em 3.5em 0em 3.5em;
+  }
+
+  .showcase {
+    height: 575px;
   }
 }
 
